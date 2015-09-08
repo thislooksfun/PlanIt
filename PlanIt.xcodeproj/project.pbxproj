@@ -7,27 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4067F671B93F74D00B30024 /* CustomHighlightRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4067F661B93F74D00B30024 /* CustomHighlightRowView.swift */; };
-		F4067F691B940C8E00B30024 /* CustomTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4067F681B940C8E00B30024 /* CustomTableCell.swift */; };
-		F4067F6F1B94B98D00B30024 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4067F6E1B94B98D00B30024 /* SplitViewController.swift */; };
-		F4067F711B94F7CD00B30024 /* ListInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4067F701B94F7CD00B30024 /* ListInfo.swift */; };
-		F4067F731B95577100B30024 /* ItemInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4067F721B95577100B30024 /* ItemInfo.swift */; };
-		F4067F751B955A1A00B30024 /* TableNoDeselect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4067F741B955A1A00B30024 /* TableNoDeselect.swift */; };
-		F4067F7B1B9560D900B30024 /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4067F7A1B9560D900B30024 /* ProgressBar.swift */; };
-		F4067F7F1B98EEF100B30024 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4067F7E1B98EEF100B30024 /* DetailViewController.swift */; };
-		F4067F8B1B99071500B30024 /* ColorRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4067F8A1B99071500B30024 /* ColorRect.swift */; };
-		F4680C1E1B939413001903C2 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4680C1C1B939413001903C2 /* WindowController.swift */; };
-		F4680C231B93A441001903C2 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4680C221B93A441001903C2 /* ListViewController.swift */; };
-		F4680C251B93B08F001903C2 /* CustomListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4680C241B93B08F001903C2 /* CustomListCell.swift */; };
-		F4680C271B93C38A001903C2 /* NewListDialogueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4680C261B93C38A001903C2 /* NewListDialogueController.swift */; };
-		F4680C291B93E27E001903C2 /* SubListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4680C281B93E27E001903C2 /* SubListController.swift */; };
-		F4680C2D1B93E40C001903C2 /* CustomSubListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4680C2C1B93E40C001903C2 /* CustomSubListCell.swift */; };
-		F4680C301B93E449001903C2 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4680C2F1B93E449001903C2 /* Helper.swift */; };
-		F4CECA011B93F276006C18C1 /* DFColorGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CEC9FE1B93F276006C18C1 /* DFColorGridView.m */; };
-		F4CECA021B93F276006C18C1 /* DFColorWell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CECA001B93F276006C18C1 /* DFColorWell.m */; };
-		F4E5D9361B936FCB00C39D12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E5D9351B936FCB00C39D12 /* AppDelegate.swift */; };
+		F4A530161B9FA13E00764313 /* PlanIt in Resources */ = {isa = PBXBuildFile; fileRef = F4A530151B9FA13E00764313 /* PlanIt */; settings = {ASSET_TAGS = (); }; };
 		F4E5D93A1B936FCB00C39D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E5D9391B936FCB00C39D12 /* Assets.xcassets */; };
-		F4E5D93D1B936FCB00C39D12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4E5D93B1B936FCB00C39D12 /* Main.storyboard */; };
 		F4E5D9481B936FCB00C39D12 /* PlanItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E5D9471B936FCB00C39D12 /* PlanItTests.swift */; };
 		F4E5D9531B936FCB00C39D12 /* PlanItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E5D9521B936FCB00C39D12 /* PlanItUITests.swift */; };
 /* End PBXBuildFile section */
@@ -50,32 +31,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F4067F661B93F74D00B30024 /* CustomHighlightRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHighlightRowView.swift; sourceTree = "<group>"; };
-		F4067F681B940C8E00B30024 /* CustomTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableCell.swift; sourceTree = "<group>"; };
-		F4067F6E1B94B98D00B30024 /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
-		F4067F701B94F7CD00B30024 /* ListInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInfo.swift; sourceTree = "<group>"; };
-		F4067F721B95577100B30024 /* ItemInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemInfo.swift; sourceTree = "<group>"; };
-		F4067F741B955A1A00B30024 /* TableNoDeselect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableNoDeselect.swift; sourceTree = "<group>"; };
-		F4067F7A1B9560D900B30024 /* ProgressBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
-		F4067F7E1B98EEF100B30024 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		F4067F8A1B99071500B30024 /* ColorRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRect.swift; sourceTree = "<group>"; };
-		F4680C1C1B939413001903C2 /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
-		F4680C221B93A441001903C2 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		F4680C241B93B08F001903C2 /* CustomListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomListCell.swift; sourceTree = "<group>"; };
-		F4680C261B93C38A001903C2 /* NewListDialogueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewListDialogueController.swift; sourceTree = "<group>"; };
-		F4680C281B93E27E001903C2 /* SubListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubListController.swift; sourceTree = "<group>"; };
-		F4680C2C1B93E40C001903C2 /* CustomSubListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSubListCell.swift; sourceTree = "<group>"; };
-		F4680C2F1B93E449001903C2 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
-		F4CEC9FC1B93F276006C18C1 /* PlanIt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlanIt-Bridging-Header.h"; sourceTree = "<group>"; };
-		F4CEC9FD1B93F276006C18C1 /* DFColorGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFColorGridView.h; sourceTree = "<group>"; };
-		F4CEC9FE1B93F276006C18C1 /* DFColorGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFColorGridView.m; sourceTree = "<group>"; };
-		F4CEC9FF1B93F276006C18C1 /* DFColorWell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFColorWell.h; sourceTree = "<group>"; };
-		F4CECA001B93F276006C18C1 /* DFColorWell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFColorWell.m; sourceTree = "<group>"; };
+		F4A530151B9FA13E00764313 /* PlanIt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PlanIt; sourceTree = "<group>"; };
 		F4E5D9321B936FCB00C39D12 /* PlanIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4E5D9351B936FCB00C39D12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4E5D9391B936FCB00C39D12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PlanIt/Assets.xcassets; sourceTree = "<group>"; };
-		F4E5D93C1B936FCB00C39D12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F4E5D93E1B936FCB00C39D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4E5D9431B936FCB00C39D12 /* PlanItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E5D9471B936FCB00C39D12 /* PlanItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanItTests.swift; sourceTree = "<group>"; };
 		F4E5D9491B936FCB00C39D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -109,125 +67,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F4067F6A1B9412B400B30024 /* BaseFiles */ = {
-			isa = PBXGroup;
-			children = (
-				F4067F771B95609A00B30024 /* Helpers */,
-				F4067F761B95608D00B30024 /* Info */,
-			);
-			path = BaseFiles;
-			sourceTree = "<group>";
-		};
-		F4067F761B95608D00B30024 /* Info */ = {
-			isa = PBXGroup;
-			children = (
-				F4067F721B95577100B30024 /* ItemInfo.swift */,
-				F4067F701B94F7CD00B30024 /* ListInfo.swift */,
-			);
-			path = Info;
-			sourceTree = "<group>";
-		};
-		F4067F771B95609A00B30024 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				F4067F8A1B99071500B30024 /* ColorRect.swift */,
-				F4067F7A1B9560D900B30024 /* ProgressBar.swift */,
-				F4067F781B9560A200B30024 /* Table */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		F4067F781B9560A200B30024 /* Table */ = {
-			isa = PBXGroup;
-			children = (
-				F4067F661B93F74D00B30024 /* CustomHighlightRowView.swift */,
-				F4067F681B940C8E00B30024 /* CustomTableCell.swift */,
-				F4067F741B955A1A00B30024 /* TableNoDeselect.swift */,
-			);
-			path = Table;
-			sourceTree = "<group>";
-		};
-		F4067F7C1B98E88600B30024 /* SplitView */ = {
-			isa = PBXGroup;
-			children = (
-				F4067F6E1B94B98D00B30024 /* SplitViewController.swift */,
-				F4067F7D1B98EED600B30024 /* DetailView */,
-				F4680C2A1B93E2F8001903C2 /* ListView */,
-				F4680C2B1B93E32C001903C2 /* SubListView */,
-			);
-			path = SplitView;
-			sourceTree = "<group>";
-		};
-		F4067F7D1B98EED600B30024 /* DetailView */ = {
-			isa = PBXGroup;
-			children = (
-				F4067F7E1B98EEF100B30024 /* DetailViewController.swift */,
-			);
-			path = DetailView;
-			sourceTree = "<group>";
-		};
-		F4680C201B93A3D7001903C2 /* GUI */ = {
-			isa = PBXGroup;
-			children = (
-				F4680C1C1B939413001903C2 /* WindowController.swift */,
-				F4067F6A1B9412B400B30024 /* BaseFiles */,
-				F4067F7C1B98E88600B30024 /* SplitView */,
-				F4E5D93B1B936FCB00C39D12 /* Main.storyboard */,
-			);
-			path = GUI;
-			sourceTree = "<group>";
-		};
-		F4680C211B93A3E6001903C2 /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				F4E5D9351B936FCB00C39D12 /* AppDelegate.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		F4680C2A1B93E2F8001903C2 /* ListView */ = {
-			isa = PBXGroup;
-			children = (
-				F4680C241B93B08F001903C2 /* CustomListCell.swift */,
-				F4680C221B93A441001903C2 /* ListViewController.swift */,
-				F4680C261B93C38A001903C2 /* NewListDialogueController.swift */,
-			);
-			path = ListView;
-			sourceTree = "<group>";
-		};
-		F4680C2B1B93E32C001903C2 /* SubListView */ = {
-			isa = PBXGroup;
-			children = (
-				F4680C2C1B93E40C001903C2 /* CustomSubListCell.swift */,
-				F4680C281B93E27E001903C2 /* SubListController.swift */,
-			);
-			path = SubListView;
-			sourceTree = "<group>";
-		};
-		F4680C2E1B93E43D001903C2 /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				F4680C2F1B93E449001903C2 /* Helper.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		F4CEC9FB1B93F260006C18C1 /* Obj-C */ = {
-			isa = PBXGroup;
-			children = (
-				F4CEC9FD1B93F276006C18C1 /* DFColorGridView.h */,
-				F4CEC9FE1B93F276006C18C1 /* DFColorGridView.m */,
-				F4CEC9FF1B93F276006C18C1 /* DFColorWell.h */,
-				F4CECA001B93F276006C18C1 /* DFColorWell.m */,
-				F4CEC9FC1B93F276006C18C1 /* PlanIt-Bridging-Header.h */,
-			);
-			path = "Obj-C";
-			sourceTree = "<group>";
-		};
 		F4E5D9291B936FCB00C39D12 = {
 			isa = PBXGroup;
 			children = (
-				F4E5D9341B936FCB00C39D12 /* PlanIt */,
+				F4A530151B9FA13E00764313 /* PlanIt */,
 				F4E5D9461B936FCB00C39D12 /* PlanItTests */,
 				F4E5D9511B936FCB00C39D12 /* PlanItUITests */,
 				F4E5D9331B936FCB00C39D12 /* Products */,
@@ -243,18 +86,6 @@
 				F4E5D94E1B936FCB00C39D12 /* PlanItUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F4E5D9341B936FCB00C39D12 /* PlanIt */ = {
-			isa = PBXGroup;
-			children = (
-				F4CEC9FB1B93F260006C18C1 /* Obj-C */,
-				F4E5D93E1B936FCB00C39D12 /* Info.plist */,
-				F4680C211B93A3E6001903C2 /* Core */,
-				F4680C201B93A3D7001903C2 /* GUI */,
-				F4680C2E1B93E43D001903C2 /* Util */,
-			);
-			path = PlanIt;
 			sourceTree = "<group>";
 		};
 		F4E5D9461B936FCB00C39D12 /* PlanItTests */ = {
@@ -379,8 +210,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4A530161B9FA13E00764313 /* PlanIt in Resources */,
 				F4E5D93A1B936FCB00C39D12 /* Assets.xcassets in Resources */,
-				F4E5D93D1B936FCB00C39D12 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,25 +236,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4680C231B93A441001903C2 /* ListViewController.swift in Sources */,
-				F4067F7B1B9560D900B30024 /* ProgressBar.swift in Sources */,
-				F4680C2D1B93E40C001903C2 /* CustomSubListCell.swift in Sources */,
-				F4CECA021B93F276006C18C1 /* DFColorWell.m in Sources */,
-				F4067F711B94F7CD00B30024 /* ListInfo.swift in Sources */,
-				F4067F731B95577100B30024 /* ItemInfo.swift in Sources */,
-				F4680C1E1B939413001903C2 /* WindowController.swift in Sources */,
-				F4680C251B93B08F001903C2 /* CustomListCell.swift in Sources */,
-				F4067F671B93F74D00B30024 /* CustomHighlightRowView.swift in Sources */,
-				F4067F7F1B98EEF100B30024 /* DetailViewController.swift in Sources */,
-				F4067F8B1B99071500B30024 /* ColorRect.swift in Sources */,
-				F4680C291B93E27E001903C2 /* SubListController.swift in Sources */,
-				F4680C271B93C38A001903C2 /* NewListDialogueController.swift in Sources */,
-				F4E5D9361B936FCB00C39D12 /* AppDelegate.swift in Sources */,
-				F4067F6F1B94B98D00B30024 /* SplitViewController.swift in Sources */,
-				F4680C301B93E449001903C2 /* Helper.swift in Sources */,
-				F4CECA011B93F276006C18C1 /* DFColorGridView.m in Sources */,
-				F4067F751B955A1A00B30024 /* TableNoDeselect.swift in Sources */,
-				F4067F691B940C8E00B30024 /* CustomTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,18 +269,6 @@
 			targetProxy = F4E5D94F1B936FCB00C39D12 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F4E5D93B1B936FCB00C39D12 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4E5D93C1B936FCB00C39D12 /* Base */,
-			);
-			name = Main.storyboard;
-			path = .;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F4E5D9551B936FCB00C39D12 /* Debug */ = {
