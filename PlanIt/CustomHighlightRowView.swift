@@ -1,0 +1,62 @@
+//
+//  CustomHighlightRowView.swift
+//  PlanIt
+//
+//  Created by thislooksfun on 8/30/15.
+//  Copyright © 2015 thislooksfun. All rights reserved.
+//
+
+import Cocoa
+
+class CustomHighlightRowView: NSTableRowView
+{
+	private static var rows = [String: [Int: CustomHighlightRowView]]()
+	
+	lazy var cell: CustomTableCell = {
+		return self.viewAtColumn(0) as! CustomTableCell
+	}()
+	
+	var row: Int!
+	var doRedraw = false
+	
+	func redraw() {
+		doRedraw = true
+		//self.needsDisplay = true
+	}
+	
+	override func drawRect(dirtyRect: NSRect) {
+		super.drawRect(dirtyRect)
+		
+		if selected {
+			if doRedraw {
+				//cell.prepForRedraw()
+			}
+			cell.select()
+			self.cell._color!.set()
+			NSRectFill(dirtyRect)
+		} else {
+			cell.deselect()
+		}
+		
+		doRedraw = false
+	}
+	
+	static func getForTableView(table: String, andRow row: Int) -> CustomHighlightRowView? {
+		guard row >= 0 else { return nil }
+		
+		var tab = rows[table]
+		if tab == nil {
+			tab = [Int: CustomHighlightRowView]()
+			rows[table] = tab
+		}
+		
+		var view = tab![row]
+		if view == nil {
+			view = CustomHighlightRowView()
+			view!.row = row
+			rows[table]![row] = view
+		}
+		
+		return view!
+	}
+}
