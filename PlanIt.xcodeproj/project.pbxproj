@@ -115,47 +115,47 @@
 				F4067F771B95609A00B30024 /* Helpers */,
 				F4067F761B95608D00B30024 /* Info */,
 			);
-			name = BaseFiles;
+			path = BaseFiles;
 			sourceTree = "<group>";
 		};
 		F4067F761B95608D00B30024 /* Info */ = {
 			isa = PBXGroup;
 			children = (
-				F4067F701B94F7CD00B30024 /* ListInfo.swift */,
 				F4067F721B95577100B30024 /* ItemInfo.swift */,
+				F4067F701B94F7CD00B30024 /* ListInfo.swift */,
 			);
-			name = Info;
+			path = Info;
 			sourceTree = "<group>";
 		};
 		F4067F771B95609A00B30024 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				F4067F781B9560A200B30024 /* Table */,
-				F4067F7A1B9560D900B30024 /* ProgressBar.swift */,
 				F4067F8A1B99071500B30024 /* ColorRect.swift */,
+				F4067F7A1B9560D900B30024 /* ProgressBar.swift */,
+				F4067F781B9560A200B30024 /* Table */,
 			);
-			name = Helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F4067F781B9560A200B30024 /* Table */ = {
 			isa = PBXGroup;
 			children = (
-				F4067F741B955A1A00B30024 /* TableNoDeselect.swift */,
 				F4067F661B93F74D00B30024 /* CustomHighlightRowView.swift */,
 				F4067F681B940C8E00B30024 /* CustomTableCell.swift */,
+				F4067F741B955A1A00B30024 /* TableNoDeselect.swift */,
 			);
-			name = Table;
+			path = Table;
 			sourceTree = "<group>";
 		};
 		F4067F7C1B98E88600B30024 /* SplitView */ = {
 			isa = PBXGroup;
 			children = (
 				F4067F6E1B94B98D00B30024 /* SplitViewController.swift */,
+				F4067F7D1B98EED600B30024 /* DetailView */,
 				F4680C2A1B93E2F8001903C2 /* ListView */,
 				F4680C2B1B93E32C001903C2 /* SubListView */,
-				F4067F7D1B98EED600B30024 /* DetailView */,
 			);
-			name = SplitView;
+			path = SplitView;
 			sourceTree = "<group>";
 		};
 		F4067F7D1B98EED600B30024 /* DetailView */ = {
@@ -163,7 +163,7 @@
 			children = (
 				F4067F7E1B98EEF100B30024 /* DetailViewController.swift */,
 			);
-			name = DetailView;
+			path = DetailView;
 			sourceTree = "<group>";
 		};
 		F4680C201B93A3D7001903C2 /* GUI */ = {
@@ -174,7 +174,7 @@
 				F4067F7C1B98E88600B30024 /* SplitView */,
 				F4E5D93B1B936FCB00C39D12 /* Main.storyboard */,
 			);
-			name = GUI;
+			path = GUI;
 			sourceTree = "<group>";
 		};
 		F4680C211B93A3E6001903C2 /* Core */ = {
@@ -182,7 +182,7 @@
 			children = (
 				F4E5D9351B936FCB00C39D12 /* AppDelegate.swift */,
 			);
-			name = Core;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		F4680C2A1B93E2F8001903C2 /* ListView */ = {
@@ -192,7 +192,7 @@
 				F4680C221B93A441001903C2 /* ListViewController.swift */,
 				F4680C261B93C38A001903C2 /* NewListDialogueController.swift */,
 			);
-			name = ListView;
+			path = ListView;
 			sourceTree = "<group>";
 		};
 		F4680C2B1B93E32C001903C2 /* SubListView */ = {
@@ -201,7 +201,7 @@
 				F4680C2C1B93E40C001903C2 /* CustomSubListCell.swift */,
 				F4680C281B93E27E001903C2 /* SubListController.swift */,
 			);
-			name = SubListView;
+			path = SubListView;
 			sourceTree = "<group>";
 		};
 		F4680C2E1B93E43D001903C2 /* Util */ = {
@@ -209,7 +209,7 @@
 			children = (
 				F4680C2F1B93E449001903C2 /* Helper.swift */,
 			);
-			name = Util;
+			path = Util;
 			sourceTree = "<group>";
 		};
 		F4CEC9FB1B93F260006C18C1 /* Obj-C */ = {
@@ -221,17 +221,17 @@
 				F4CECA001B93F276006C18C1 /* DFColorWell.m */,
 				F4CEC9FC1B93F276006C18C1 /* PlanIt-Bridging-Header.h */,
 			);
-			name = "Obj-C";
+			path = "Obj-C";
 			sourceTree = "<group>";
 		};
 		F4E5D9291B936FCB00C39D12 = {
 			isa = PBXGroup;
 			children = (
 				F4E5D9341B936FCB00C39D12 /* PlanIt */,
-				F4E5D9391B936FCB00C39D12 /* Assets.xcassets */,
 				F4E5D9461B936FCB00C39D12 /* PlanItTests */,
 				F4E5D9511B936FCB00C39D12 /* PlanItUITests */,
 				F4E5D9331B936FCB00C39D12 /* Products */,
+				F4E5D9391B936FCB00C39D12 /* Assets.xcassets */,
 			);
 			sourceTree = "<group>";
 		};
@@ -260,8 +260,8 @@
 		F4E5D9461B936FCB00C39D12 /* PlanItTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4E5D9471B936FCB00C39D12 /* PlanItTests.swift */,
 				F4E5D9491B936FCB00C39D12 /* Info.plist */,
+				F4E5D9471B936FCB00C39D12 /* PlanItTests.swift */,
 			);
 			path = PlanItTests;
 			sourceTree = "<group>";
@@ -269,8 +269,8 @@
 		F4E5D9511B936FCB00C39D12 /* PlanItUITests */ = {
 			isa = PBXGroup;
 			children = (
-				F4E5D9521B936FCB00C39D12 /* PlanItUITests.swift */,
 				F4E5D9541B936FCB00C39D12 /* Info.plist */,
+				F4E5D9521B936FCB00C39D12 /* PlanItUITests.swift */,
 			);
 			path = PlanItUITests;
 			sourceTree = "<group>";
@@ -465,6 +465,7 @@
 				F4E5D93C1B936FCB00C39D12 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -560,7 +561,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thislooksfun.PlanIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PlanIt/PlanIt-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlanIt/Obj-C/PlanIt-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -575,7 +576,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = thislooksfun.PlanIt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "PlanIt/PlanIt-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlanIt/Obj-C/PlanIt-Bridging-Header.h";
 			};
 			name = Release;
 		};
