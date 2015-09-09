@@ -12,16 +12,19 @@ class CustomHighlightRowView: NSTableRowView
 {
 	private static var rows = [String: [Int: CustomHighlightRowView]]()
 	
+	private let light = buildColor(white: 255, alpha: 0.75)
+	private let dark = buildColor(white: 255, alpha: 0.25)
+	
 	lazy var cell: CustomTableCell = {
 		return self.viewAtColumn(0) as! CustomTableCell
 	}()
 	
-	var row: Int!
+	var row: Int?
 	var doRedraw = false
 	
 	func redraw() {
 		doRedraw = true
-		//self.needsDisplay = true
+		self.needsDisplay = true
 	}
 	
 	override func drawRect(dirtyRect: NSRect) {
@@ -29,10 +32,20 @@ class CustomHighlightRowView: NSTableRowView
 		
 		if selected {
 			if doRedraw {
-				//cell.prepForRedraw()
+				cell.prepForRedraw()
 			}
 			cell.select()
-			self.cell._color!.set()
+			
+			if emphasized {
+				cell.foreground()
+				
+				self.cell._color!.set()
+			} else if cell._color != nil {
+				cell.background()
+				
+				(isDarkColor(cell.color) ? light : dark).set()
+			}
+			
 			NSRectFill(dirtyRect)
 		} else {
 			cell.deselect()

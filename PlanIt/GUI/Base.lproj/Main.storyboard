@@ -1169,6 +1169,14 @@ Gw
                                     <customView placeholderIntrinsicWidth="67" placeholderIntrinsicHeight="23" translatesAutoresizingMaskIntoConstraints="NO" id="zas-lx-zvv" customClass="DFColorWell">
                                         <rect key="frame" x="5" y="276" width="67" height="23"/>
                                     </customView>
+                                    <imageView hidden="YES" toolTip="This color might not show up well. Consider making it darker." horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D04-0p-aPa">
+                                        <rect key="frame" x="80" y="276" width="23" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="23" id="1oy-j5-ch6"/>
+                                            <constraint firstAttribute="height" constant="23" id="nYT-yT-fgo"/>
+                                        </constraints>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="User-Interface-Error-icon" id="kur-ap-xAc"/>
+                                    </imageView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="l9c-Oc-qaj" firstAttribute="top" secondItem="OXc-Yx-SdK" secondAttribute="bottom" constant="5" id="42g-Rd-yYv"/>
@@ -1177,8 +1185,10 @@ Gw
                                     <constraint firstAttribute="bottom" secondItem="l9c-Oc-qaj" secondAttribute="bottom" constant="5" id="MqL-gs-UuH"/>
                                     <constraint firstItem="l9c-Oc-qaj" firstAttribute="leading" secondItem="1bf-7x-Tk3" secondAttribute="leading" constant="5" id="N5Y-p0-s3p"/>
                                     <constraint firstItem="zas-lx-zvv" firstAttribute="top" secondItem="1bf-7x-Tk3" secondAttribute="top" constant="5" id="Rz2-0s-Skl"/>
+                                    <constraint firstItem="D04-0p-aPa" firstAttribute="centerY" secondItem="zas-lx-zvv" secondAttribute="centerY" id="S09-qj-amC"/>
                                     <constraint firstItem="zas-lx-zvv" firstAttribute="leading" secondItem="1bf-7x-Tk3" secondAttribute="leading" constant="5" id="Us3-Az-td4"/>
                                     <constraint firstAttribute="trailing" secondItem="iiX-at-QEe" secondAttribute="trailing" constant="5" id="Ynv-qa-JxU"/>
+                                    <constraint firstItem="D04-0p-aPa" firstAttribute="leading" secondItem="zas-lx-zvv" secondAttribute="trailing" constant="8" id="e35-QZ-cVD"/>
                                     <constraint firstItem="iiX-at-QEe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="l9c-Oc-qaj" secondAttribute="trailing" constant="5" id="hHa-aZ-gJd"/>
                                     <constraint firstItem="OXc-Yx-SdK" firstAttribute="leading" secondItem="1bf-7x-Tk3" secondAttribute="leading" id="jmY-oR-l1S"/>
                                     <constraint firstAttribute="trailing" secondItem="OXc-Yx-SdK" secondAttribute="trailing" id="ns4-LK-zG8"/>
@@ -1196,6 +1206,7 @@ Gw
                     <connections>
                         <outlet property="color" destination="zas-lx-zvv" id="8nv-uW-BQN"/>
                         <outlet property="table" destination="sf6-aE-g1B" id="tIC-IG-I8W"/>
+                        <outlet property="warning" destination="D04-0p-aPa" id="Gy3-eb-uU6"/>
                     </connections>
                 </viewController>
                 <customObject id="DuL-Hm-glA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -1266,4 +1277,7 @@ Gw
             <point key="canvasLocation" x="429" y="1829"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="User-Interface-Error-icon" width="512" height="512"/>
+    </resources>
 </document>

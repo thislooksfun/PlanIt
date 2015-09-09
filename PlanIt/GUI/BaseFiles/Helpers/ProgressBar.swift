@@ -10,8 +10,8 @@ import Cocoa
 
 class ProgressBar: NSBox
 {
-	let gray = NSColor(deviceWhite: 0.5, alpha: 0.5)
-	var color: NSColor = randColor()
+	private let gray = buildColor(white: 127, alpha: 0.5)
+	var color: NSColor = NSColor.blueColor()
 	var percent: CGFloat = 0.75
 	
     override func drawRect(dirtyRect: NSRect) {

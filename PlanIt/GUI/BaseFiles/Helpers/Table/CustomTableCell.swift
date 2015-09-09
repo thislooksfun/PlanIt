@@ -16,6 +16,7 @@ class CustomTableCell: NSTableCellView
 	
 	private(set) var _color: NSColor?
 	private(set) var selected = false
+	private(set) var isInBackground = false
 	
 	private let white = buildColor(red: 250, green: 250, blue: 250)
 	private let black = buildColor(red: 5, green: 5, blue: 5)
@@ -27,6 +28,7 @@ class CustomTableCell: NSTableCellView
 	
 	func reset() {
 		selected = false
+		isInBackground = false
 		_color = nil
 		label.stringValue = ""
 		label.textColor = black
@@ -34,7 +36,24 @@ class CustomTableCell: NSTableCellView
 	
 	func prepForRedraw() {
 		selected = false
-		_color = nil
+		isInBackground = false
+		_color = isInBackground ? _color : nil
+	}
+	
+	func background() -> Bool {
+		guard !isInBackground else { return false }
+		
+		isInBackground = true
+		color = _color ?? color
+		return true
+	}
+	func foreground() -> Bool {
+		guard isInBackground else { return false }
+		
+		isInBackground = false
+		_color = color
+		color = isDarkColor(_color!) ? white : black
+		return true
 	}
 	
 	func select() -> Bool {
@@ -49,7 +68,7 @@ class CustomTableCell: NSTableCellView
 		guard selected else { return false }
 		
 		selected = false
-		color = _color!
+		color = _color ?? color
 		return true
 	}
 }

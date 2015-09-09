@@ -12,6 +12,7 @@ class SubListController: NSViewController, NSTableViewDataSource, NSTableViewDel
 {
 	@IBOutlet var table: NSTableView!
 	@IBOutlet var color: DFColorWell!
+	@IBOutlet var warning: NSImageView!
 	
 	private var infoID = -1
 	private var objects = [ItemInfo]()
@@ -47,6 +48,7 @@ class SubListController: NSViewController, NSTableViewDataSource, NSTableViewDel
 		if keyPath == "color" && (object as? DFColorWell) == color {
 			if let color = (change?["new"] as? NSColor) {
 				listColor = color
+				warning.hidden = color.toGrayscale().whiteComponent < 0.75
 			}
 		} else {
 			super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)

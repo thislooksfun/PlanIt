@@ -13,11 +13,16 @@ class CustomSubListCell: CustomTableCell
 	@IBOutlet var progress: ProgressBar!
 	
 	override var color: NSColor {
-		get { return label.textColor! }
+		get { return super.color }
 		set {
-			label.textColor = newValue
+			super.color = newValue
 			progress.color = newValue
 		}
+	}
+	
+	override func prepForRedraw() {
+		super.prepForRedraw()
+		progress.hidden = false
 	}
 	
 	override func select() -> Bool {
@@ -32,6 +37,7 @@ class CustomSubListCell: CustomTableCell
 		guard super.deselect() else { return false }
 		
 		progress.hidden = false
+		progress.needsDisplay = true
 		
 		return true
 	}

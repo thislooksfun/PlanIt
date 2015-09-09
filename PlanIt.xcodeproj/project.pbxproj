@@ -25,7 +25,6 @@
 		F4A5304D1B9FA38F00764313 /* CustomSubListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A530321B9FA38F00764313 /* CustomSubListCell.swift */; settings = {ASSET_TAGS = (); }; };
 		F4A5304E1B9FA38F00764313 /* SubListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A530331B9FA38F00764313 /* SubListController.swift */; settings = {ASSET_TAGS = (); }; };
 		F4A5304F1B9FA38F00764313 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A530341B9FA38F00764313 /* WindowController.swift */; settings = {ASSET_TAGS = (); }; };
-		F4A530501B9FA38F00764313 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4A530351B9FA38F00764313 /* Info.plist */; settings = {ASSET_TAGS = (); }; };
 		F4A530511B9FA38F00764313 /* DFColorGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A530381B9FA38F00764313 /* DFColorGridView.m */; settings = {ASSET_TAGS = (); }; };
 		F4A530521B9FA38F00764313 /* DFColorWell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5303A1B9FA38F00764313 /* DFColorWell.m */; settings = {ASSET_TAGS = (); }; };
 		F4A530531B9FA38F00764313 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5303D1B9FA38F00764313 /* Helper.swift */; settings = {ASSET_TAGS = (); }; };
@@ -383,7 +382,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A530501B9FA38F00764313 /* Info.plist in Resources */,
 				F4A530401B9FA38F00764313 /* Main.storyboard in Resources */,
 				F4A5303E1B9FA38F00764313 /* Assets.xcassets in Resources */,
 				F4E5D93A1B936FCB00C39D12 /* Assets.xcassets in Resources */,

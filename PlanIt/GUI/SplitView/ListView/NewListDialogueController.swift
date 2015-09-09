@@ -16,7 +16,7 @@ class NewListDialogueController: NSViewController, NSTextFieldDelegate
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-		color.color = randColor()
+		color.color = randColor(min: 0, max: 190)
     }
 	
 	@IBAction func create(sender: AnyObject?) {

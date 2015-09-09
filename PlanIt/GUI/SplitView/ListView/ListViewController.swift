@@ -35,9 +35,9 @@ class ListViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
 	
 	private func initItems() {
 		objects = [
-			ListInfo(title: "Homework",   color: randColor(), items: [ItemInfo(name: "Phys"), ItemInfo(name: "Comp"), ItemInfo(name: "History")]),
-			ListInfo(title: "Schoolwork", color: randColor(), items: [ItemInfo(name: "Math"), ItemInfo(name: "French")]),
-			ListInfo(title: "Misc",       color: randColor(), items: [ItemInfo(name: "Brush teeth")])
+			ListInfo(title: "Homework",   color: randColor(min: 0, max: 190), items: [ItemInfo(name: "Phys"), ItemInfo(name: "Comp"), ItemInfo(name: "History")]),
+			ListInfo(title: "Schoolwork", color: randColor(min: 0, max: 190), items: [ItemInfo(name: "Math"), ItemInfo(name: "French")]),
+			ListInfo(title: "Misc",       color: randColor(min: 0, max: 190), items: [ItemInfo(name: "Brush teeth")])
 		]
 		
 		table.reloadData()
