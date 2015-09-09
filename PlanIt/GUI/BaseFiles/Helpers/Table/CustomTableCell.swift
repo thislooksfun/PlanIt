@@ -10,9 +10,10 @@ import Cocoa
 
 class CustomTableCell: NSTableCellView
 {
+	//MARK: - Variables -
+	
 	@IBOutlet var label: NSTextField!
 	@IBOutlet var contentContainer: NSView!
-	
 	
 	private(set) var _color: NSColor?
 	private(set) var selected = false
@@ -20,6 +21,9 @@ class CustomTableCell: NSTableCellView
 	
 	private let white = buildColor(red: 250, green: 250, blue: 250)
 	private let black = buildColor(red: 5, green: 5, blue: 5)
+	
+	
+	//MARK: - Functions -
 	
 	var color: NSColor {
 		get { return label.textColor! }
@@ -40,6 +44,7 @@ class CustomTableCell: NSTableCellView
 		_color = isInBackground ? _color : nil
 	}
 	
+	//MARK: - Background
 	func background() -> Bool {
 		guard !isInBackground else { return false }
 		
@@ -56,6 +61,7 @@ class CustomTableCell: NSTableCellView
 		return true
 	}
 	
+	//MARK: - Selection
 	func select() -> Bool {
 		guard !selected else { return false }
 		

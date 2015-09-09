@@ -738,7 +738,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="354" height="274"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
-                                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="20" viewBased="YES" id="9Dw-zG-SpC" customClass="TableNoDeselect" customModule="PlanIt" customModuleProvider="target">
+                                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnReordering="NO" columnSelection="YES" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="20" viewBased="YES" id="9Dw-zG-SpC" customClass="ListTable" customModule="PlanIt" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="354" height="0.0"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>

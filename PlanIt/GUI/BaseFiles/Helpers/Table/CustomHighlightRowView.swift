@@ -10,6 +10,8 @@ import Cocoa
 
 class CustomHighlightRowView: NSTableRowView
 {
+	//MARK: - Variables -
+	
 	private static var rows = [String: [Int: CustomHighlightRowView]]()
 	
 	private let light = buildColor(white: 255, alpha: 0.75)
@@ -21,6 +23,9 @@ class CustomHighlightRowView: NSTableRowView
 	
 	var row: Int?
 	var doRedraw = false
+	
+	
+	//MARK: - Functions -
 	
 	func redraw() {
 		doRedraw = true

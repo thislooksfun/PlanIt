@@ -10,7 +10,12 @@ import Cocoa
 
 class CustomSubListCell: CustomTableCell
 {
+	//MARK: - Variables -
+	
 	@IBOutlet var progress: ProgressBar!
+	
+	
+	//MARK: - Functions -
 	
 	override var color: NSColor {
 		get { return super.color }

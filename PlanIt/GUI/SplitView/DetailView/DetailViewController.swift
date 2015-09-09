@@ -10,10 +10,15 @@ import Cocoa
 
 class DetailViewController: NSViewController
 {
+	//MARK: - Variables -
+	
 	@IBOutlet var titleLabel: NSTextField!
 	@IBOutlet var progress: ProgressBar!
 	
 	var subView: SubListController!
+	
+	
+	//MARK: - Functions -
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()

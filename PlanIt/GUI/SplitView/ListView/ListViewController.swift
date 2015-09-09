@@ -12,7 +12,7 @@ class ListViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
 {
 	//MARK: - Variables -
 	
-	@IBOutlet var table: NSTableView!
+	@IBOutlet var table: ListTable!
 	
 	var objects = [ListInfo]()
 	var rowViews = [CustomHighlightRowView]()
@@ -30,6 +30,8 @@ class ListViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
     override func viewDidLoad() {
         super.viewDidLoad()
 		
+		table.list = self
+		
 		initItems()
     }
 	
@@ -42,6 +44,8 @@ class ListViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
 		
 		table.reloadData()
 	}
+	
+	//MARK: - Updating
 	
 	func updateColor(color: NSColor, forID ID: Int) {
 		if let (item, _) = getItem(ID) {
@@ -89,7 +93,6 @@ class ListViewController: NSViewController, NSTableViewDataSource, NSTableViewDe
 	func removeRow(index i: Int) {
 		objects.removeAtIndex(i);
 	}
-	
 	
 	//MARK: - Table overrides
 	

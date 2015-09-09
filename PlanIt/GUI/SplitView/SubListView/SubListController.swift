@@ -10,6 +10,8 @@ import Cocoa
 
 class SubListController: NSViewController, NSTableViewDataSource, NSTableViewDelegate
 {
+	//MARK: - Variables -
+	
 	@IBOutlet var table: NSTableView!
 	@IBOutlet var color: DFColorWell!
 	@IBOutlet var warning: NSImageView!
@@ -33,6 +35,11 @@ class SubListController: NSViewController, NSTableViewDataSource, NSTableViewDel
 	
 	var ready = false
 	
+	
+	//MARK: - Functions -
+	
+	//MARK: Initalization
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
@@ -44,6 +51,17 @@ class SubListController: NSViewController, NSTableViewDataSource, NSTableViewDel
 		ready = true
 	}
 	
+	func setDetails(info: ListInfo) {
+		//TODO: add title?
+		self.infoID = info.ID
+		self.objects = info.items
+		self.listColor = info.color
+		self.color.color = info.color
+		
+		table.reloadData()
+	}
+	
+	//MARK: - KVO
 	override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
 		if keyPath == "color" && (object as? DFColorWell) == color {
 			if let color = (change?["new"] as? NSColor) {
@@ -54,6 +72,8 @@ class SubListController: NSViewController, NSTableViewDataSource, NSTableViewDel
 			super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
 		}
 	}
+	
+	//MARK: - Updating
 	
 	func reloadColor() {
 		guard ready else { return }
@@ -68,19 +88,7 @@ class SubListController: NSViewController, NSTableViewDataSource, NSTableViewDel
 		self.listView.updateColor(_listColor, forID: infoID)
 	}
 	
-	override func viewDidAppear() {
-		super.viewDidAppear()
-	}
-	
-	func setDetails(info: ListInfo) {
-		//TODO: add title?
-		self.infoID = info.ID
-		self.objects = info.items
-		self.listColor = info.color
-		self.color.color = info.color
-		
-		table.reloadData()
-	}
+	//MARK: - Table helpers
 
 	func addItem(name: String) {
 		objects.append(ItemInfo(name: name))
@@ -99,6 +107,19 @@ class SubListController: NSViewController, NSTableViewDataSource, NSTableViewDel
 		objects.removeAtIndex(i);
 	}
 	
+	func buildCellForRow(row: Int) -> CustomSubListCell {
+		let cell = table.makeViewWithIdentifier("subListCell", owner: self) as! CustomSubListCell
+		
+		let info = self.objects[row]
+		cell.reset()
+		cell.label.stringValue = info.name
+		cell.color = listColor
+		
+		return cell
+	}
+	
+	//MARK: - Table overrides
+	
 	func numberOfRowsInTableView(tableView: NSTableView) -> Int {
 		return objects.count
 	}
@@ -113,24 +134,12 @@ class SubListController: NSViewController, NSTableViewDataSource, NSTableViewDel
 		return cell.contentContainer.fittingSize.height >? 20
 	}
 	
-	func buildCellForRow(row: Int) -> CustomSubListCell {
-		let cell = table.makeViewWithIdentifier("subListCell", owner: self) as! CustomSubListCell
-		
-		let info = self.objects[row]
-		cell.reset()
-		cell.label.stringValue = info.name
-		cell.color = listColor
-		
-		return cell
-	}
-	
 	func tableViewSelectionDidChange(notification: NSNotification) {
 		guard self.table.numberOfSelectedRows > 0 else {
 			self.detailView.clear()
 			return
 		}
 		
-//		let cell = table.viewAtColumn(0, row: table.selectedRow, makeIfNecessary: false) as! CustomDetailCell
 		self.detailView.setDetails(objects[table.selectedRow], color: self.listColor)
 	}
 	

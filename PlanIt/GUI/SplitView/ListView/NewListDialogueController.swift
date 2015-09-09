@@ -10,9 +10,14 @@ import Cocoa
 
 class NewListDialogueController: NSViewController, NSTextFieldDelegate
 {
+	//MARK: - Variables -
+	
 	@IBOutlet var name: NSTextField!
 	@IBOutlet var color: DFColorWell!
 	@IBOutlet var createButton: NSButton!
+	
+	
+	//MARK: - Functions -
 	
     override func viewDidLoad() {
         super.viewDidLoad()

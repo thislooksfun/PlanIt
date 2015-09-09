@@ -10,6 +10,8 @@ import Cocoa
 
 class CustomListCell: CustomTableCell
 {
+	//MARK: - Variables -
+	
 	@IBOutlet private var countLabel: NSButton!
 	
 	var _count = -1
@@ -21,6 +23,9 @@ class CustomListCell: CustomTableCell
 			countLabel.hidden = (newValue == 0)
 		}
 	}
+	
+	
+	//MARK: - Functions -
 	
 	override func reset() {
 		super.reset()

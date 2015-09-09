@@ -28,6 +28,7 @@
 		F4A530511B9FA38F00764313 /* DFColorGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A530381B9FA38F00764313 /* DFColorGridView.m */; settings = {ASSET_TAGS = (); }; };
 		F4A530521B9FA38F00764313 /* DFColorWell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A5303A1B9FA38F00764313 /* DFColorWell.m */; settings = {ASSET_TAGS = (); }; };
 		F4A530531B9FA38F00764313 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A5303D1B9FA38F00764313 /* Helper.swift */; settings = {ASSET_TAGS = (); }; };
+		F4A530551B9FF9B500764313 /* ListTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A530541B9FF9B500764313 /* ListTable.swift */; settings = {ASSET_TAGS = (); }; };
 		F4E5D93A1B936FCB00C39D12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4E5D9391B936FCB00C39D12 /* Assets.xcassets */; };
 		F4E5D9481B936FCB00C39D12 /* PlanItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E5D9471B936FCB00C39D12 /* PlanItTests.swift */; };
 		F4E5D9531B936FCB00C39D12 /* PlanItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E5D9521B936FCB00C39D12 /* PlanItUITests.swift */; };
@@ -76,6 +77,7 @@
 		F4A5303A1B9FA38F00764313 /* DFColorWell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DFColorWell.m; sourceTree = "<group>"; };
 		F4A5303B1B9FA38F00764313 /* PlanIt-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PlanIt-Bridging-Header.h"; sourceTree = "<group>"; };
 		F4A5303D1B9FA38F00764313 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		F4A530541B9FF9B500764313 /* ListTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTable.swift; sourceTree = "<group>"; };
 		F4E5D9321B936FCB00C39D12 /* PlanIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4E5D9391B936FCB00C39D12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PlanIt/Assets.xcassets; sourceTree = "<group>"; };
 		F4E5D9431B936FCB00C39D12 /* PlanItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -206,6 +208,7 @@
 				F4A5302D1B9FA38F00764313 /* CustomListCell.swift */,
 				F4A5302E1B9FA38F00764313 /* ListViewController.swift */,
 				F4A5302F1B9FA38F00764313 /* NewListDialogueController.swift */,
+				F4A530541B9FF9B500764313 /* ListTable.swift */,
 			);
 			path = ListView;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				F4A530471B9FA38F00764313 /* ListInfo.swift in Sources */,
 				F4A530441B9FA38F00764313 /* CustomTableCell.swift in Sources */,
 				F4A530451B9FA38F00764313 /* TableNoDeselect.swift in Sources */,
+				F4A530551B9FF9B500764313 /* ListTable.swift in Sources */,
 				F4A5304A1B9FA38F00764313 /* ListViewController.swift in Sources */,
 				F4A530461B9FA38F00764313 /* ItemInfo.swift in Sources */,
 				F4A530531B9FA38F00764313 /* Helper.swift in Sources */,

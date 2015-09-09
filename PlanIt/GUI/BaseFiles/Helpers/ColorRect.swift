@@ -10,7 +10,12 @@ import Cocoa
 
 class ColorRect: NSView
 {
+	//MARK: - Variables -
+	
 	@IBInspectable var color: NSColor = NSColor.whiteColor()
+	
+	
+	//MARK: - Functions -
 	
 	override func drawRect(dirtyRect: NSRect) {
 		color.set()

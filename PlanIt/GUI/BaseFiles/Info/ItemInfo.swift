@@ -10,8 +10,13 @@ import Cocoa
 
 class ItemInfo
 {
+	//MARK: - Variables -
+	
 	var name: String
 	var dueBy: NSDate?
+	
+	
+	//MARK: - Initalization -
 	
 	convenience init(name: String) {
 		self.init(name: name, dueBy: nil)

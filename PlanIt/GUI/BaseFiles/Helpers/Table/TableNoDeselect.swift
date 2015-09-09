@@ -10,7 +10,12 @@ import Cocoa
 
 class TableNoDeselect: NSTableView
 {
+	//MARK: - Variables -
+	
 	var allowedFirstResponder = false
+	
+	
+	//MARK: - Functions -
 	
 	override func mouseDown(theEvent: NSEvent)
 	{

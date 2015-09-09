@@ -10,6 +10,8 @@ import Cocoa
 
 class WindowController: NSWindowController
 {
+	//MARK: - Functions -
+	
     override func windowDidLoad() {
         super.windowDidLoad()
 		

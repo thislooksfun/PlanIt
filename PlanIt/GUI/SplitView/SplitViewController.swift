@@ -10,6 +10,8 @@ import Cocoa
 
 class SplitViewController: NSSplitViewController
 {
+	//MARK: - Functions -
+	
     override func viewDidLoad()
 	{
         super.viewDidLoad()
